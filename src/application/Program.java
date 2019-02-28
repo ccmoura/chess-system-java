@@ -2,6 +2,7 @@
 package application;
 
 import boardgame.Board;
+import chess.ChessMatch;
 
 public class Program {
 
@@ -9,7 +10,8 @@ public class Program {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Board board = new Board(8, 8);
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
     }
     
 }
